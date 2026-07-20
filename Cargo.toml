@@ -1,0 +1,35 @@
+[package]
+name = "agentarmor-iot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.35", features = ["rt", "rt-multi-thread", "macros"] }
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+serde_json = "1.0"
+serde-json-core = "0.6"
+heapless = { version = "0.8", features = ["serde"] }
+metrics = { version = "0.22", default-features = false }
+metrics-exporter-prometheus = "0.13"
+warp = "0.3"
+ed25519-dalek = { version = "2.0", features = ["serde"] }
+sha2 = "0.10"
+rand = "0.8"
+base64 = "0.21"
+hex = "0.4"
+# Lightweight logging for edge devices
+tracing = { version = "0.1", default-features = false }
+tracing-subscriber = "0.3"
+
+[profile.release]
+opt-level = "z"     # Optimize for size
+lto = true          # Enable Link Time Optimization
+codegen-units = 1   # Maximize size reduction
+panic = "abort"     # Remove panic unwinding to save space
+strip = true        # Strip symbols from binary
+
+[[test]]
+name = "policy"
+path = "tests/policy.rs"
