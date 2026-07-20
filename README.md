@@ -1,4 +1,6 @@
-![AgentArmor-IoT Banner](src/banner.png)
+<p align="center">
+  <img src="src/banner.png" alt="AgentArmor-IoT Banner">
+</p>
 
 # AgentArmor-IoT
 
