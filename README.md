@@ -2,6 +2,8 @@
   <img src="src/banner.png" alt="AgentArmor-IoT Banner">
 </p>
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
 # AgentArmor-IoT
 
 AgentArmor-IoT is an ultra-lightweight, edge-optimized physical safety proxy for embodied AI. It is designed to sit between an AI agent and the physical hardware it controls, intercepting commands and ensuring they are safe before execution.
@@ -93,3 +95,13 @@ To run the test suite, use the following command:
 ```sh
 cargo test --all-targets
 ```
+
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?sources=vikrantwaghmode/agentarmor-iot&type=Date)](https://star-history.com/#vikrantwaghmode/agentarmor-iot&Date)
