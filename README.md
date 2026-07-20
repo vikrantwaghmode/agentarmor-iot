@@ -101,8 +101,3 @@ cargo test --all-targets
 This project is licensed under the PolyForm Noncommercial License 1.0.0. See the [LICENSE](LICENSE) file for details.
 
 ---
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?sources=vikrantwaghmode/agentarmor-iot&type=Date)](https://star-history.com/#vikrantwaghmode/agentarmor-iot&Date)
-te)
