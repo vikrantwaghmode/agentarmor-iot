@@ -1,3 +1,5 @@
+![AgentArmor-IoT Banner](src/banner.png)
+
 # AgentArmor-IoT
 
 AgentArmor-IoT is an ultra-lightweight, edge-optimized physical safety proxy for embodied AI. It is designed to sit between an AI agent and the physical hardware it controls, intercepting commands and ensuring they are safe before execution.
